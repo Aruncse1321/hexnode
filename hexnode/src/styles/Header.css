@@ -1,0 +1,156 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap'); */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.header-top {
+  background: linear-gradient(
+    to right,
+    rgb(150, 150, 208),
+    pink,
+    rgb(230, 214, 217)
+  );
+}
+#top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.free-trail {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.free-trail p span {
+  font-weight: 700;
+  font-size: medium;
+}
+.btn {
+  color: aliceblue;
+  background-color: #dd0735;
+  height: 50px;
+  width: 180px;
+  border-radius: 30px;
+  padding-inline: 10px;
+}
+.btn:hover {
+  background-color: aliceblue;
+  color: #dd0735;
+  border-color: #dd0735;
+}
+#bottom-content {
+  display: flex;
+}
+
+.header-bottom {
+  background-image: url("../assets/hero-gradient.png");
+  background-size: cover;
+  background-position: center;
+}
+#bottom-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.left-content {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.left-content h1 {
+  font-family: Mulish;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.left-content h1 span {
+  font-weight: bold;
+}
+
+.right-content {
+  max-width: 600px;
+}
+.left-content p {
+  font-family: "poppins", sans-serif;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+.menu-btn{
+  position:absolute;
+  right:0;
+  margin-right: 20px;
+  display: none;
+}
+.menu-btn img{
+width:35px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1375px) {
+
+  #bottom-content {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
+}
+@media (max-width:1040px){
+  .menu-btn{
+    display: block;
+
+  }
+  .header-top{
+    position: absolute;
+    background-color: aqua;
+    height:100vh;
+    width:100%; 
+ 
+  }
+  .header-top.active{
+    margin-top: 1000px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .header-top{
+    padding-block: 30px;
+  }
+  #top-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .free-trail {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .left-content,
+  .right-content {
+    max-width: 400px;
+  }
+  .left-content h1 {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  #top-content {
+    max-width: 290px;
+  }
+  .btn {
+    width: 100px;
+    height: 30px;
+    font-size: 0.5rem;
+  }
+  .left-content,
+  .right-content {
+    max-width: 280px;
+  }
+}

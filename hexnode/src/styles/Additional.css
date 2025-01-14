@@ -1,0 +1,100 @@
+#additional h1,
+#additional h3,
+#additional p {
+  font-family: Mulish;
+}
+#additional {
+  margin-top: 80px;
+}
+.top-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.offer {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.offer p {
+  width: 400px;
+}
+.t-box {
+  padding-left: 30px;
+  padding-block: 30px;
+  width: 340px;
+  box-shadow: -2px 0 10px;
+  border-radius: 30px;
+}
+.t-box img,
+.t-box h3,
+.t-box p {
+  margin-bottom: 10px;
+}
+
+.bottom-box {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.b-box {
+  padding-left: 30px;
+  padding-block: 30px;
+  width: 340px;
+  box-shadow: -2px 0 10px;
+  border-radius: 30px;
+}
+.b-box img,
+.b-box h3,
+.b-box p {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1330px) {
+  .top-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .offer {
+    align-items: center;
+  }
+  .bottom-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .offer,
+  .offer p {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .t-box {
+    width: 250px;
+    padding: 10px;
+  }
+  .t-box h3,
+  .t-box-p {
+    font-size: 1rem;
+  }
+  .b-box {
+    width: 250px;
+    padding: 10px;
+  }
+  .b-box h3,
+  .b-box-p {
+    font-size: 1rem;
+  }
+  .offer,
+  .offer p {
+    width: 250px;
+  }
+  .offer h1{
+    font-size: 1.5rem;
+  }
+}
