@@ -8,10 +8,10 @@ const Sample = () => {
 
 
   return (
-<>
- <h1>hi</h1>
+    <>
+      <h1>hi arun</h1>
 
-</>
+    </>
   );
 };
 
