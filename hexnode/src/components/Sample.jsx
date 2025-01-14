@@ -9,7 +9,7 @@ const Sample = () => {
 
   return (
     <>
-      <h1>hi arunkumar</h1>
+      <h1>hi</h1>
 
     </>
   );
